@@ -1,0 +1,116 @@
+
+
+
+.container-fluid{
+  padding: 3% 15%;
+}
+
+#top-container{
+  background-color: #5563A1;
+  color:white;
+}
+
+.nav-link{
+ text-transform: uppercase;
+ text-align: right;
+}
+
+
+.intro-text{
+font-family: Montserrat-Black;
+
+font-size: 3rem;
+line-height: 1.5;
+margin-bottom: 50px;
+}
+
+.iphone{
+  width: 250px;
+  height: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+.demo{
+position:absolute;
+width: 222px;
+height: 390px;
+top: 11%;
+left: 23%;
+z-index: 2;
+}
+
+.intro-text {
+  padding-top: 10%;
+}
+
+#download{
+padding: 15% 15%;
+background-color: #fcf8f3;
+}
+
+#features{
+  padding: 10% 0%;
+  background-color: #5563A1;
+}
+
+.icon{
+  font-size: 3rem;
+  padding-top: 20%;
+  margin-bottom: 3rem;
+
+  color: #00a8cc;
+}
+
+.title{
+  color: white;
+  padding-bottom: 10%;
+}
+
+.feature-title{
+  color: white;
+}
+
+.feature-text{
+  color: #effcef;
+  font-family: Montserrat;
+}
+
+#contact{
+  padding: 15% 15%;
+}
+
+#copyright{
+  font-size: 12px;
+  padding: 2% 15%;
+  background-color: #222;
+  color: rgba(255,255,255,.3);
+}
+
+.list-inline{
+  padding-left: 0;
+ list-style: none;
+}
+
+.list-inline-item{
+line-height: 1.5;
+display: inline;
+}
+
+body{
+  text-align: center;
+}
+
+ .footer-link{
+   text-decoration: none;
+   color:rgba(255,255,255,.3);
+ }
+
+.footer-link:hover{
+  text-decoration: none;
+  color:#fff;
+}
+
+h1{
+margin-bottom: 25px;
+}
