@@ -1,10 +1,8 @@
 
 
-
-.container-fluid{
-  padding: 3% 15%;
+.top-container{
+   padding: 3% 15%;
 }
-
 #top-container{
   background-color: #5563A1;
   color:white;
@@ -25,20 +23,15 @@ margin-bottom: 50px;
 }
 
 .iphone{
-  width: 250px;
-  height: 500px;
-  position: relative;
-  z-index: 1;
-}
+   width: 100%;
+   margin: auto;
+ }
 
-.demo{
-position:absolute;
-width: 222px;
-height: 390px;
-top: 11%;
-left: 23%;
-z-index: 2;
-}
+ .carousel-inner > .item > img{
+ margin:auto;
+ width:100%;
+ overflow: hidden;
+ }
 
 .intro-text {
   padding-top: 10%;

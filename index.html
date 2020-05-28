@@ -16,10 +16,35 @@
   <!-- Font awesome -->
   <script src="https://kit.fontawesome.com/b7eb726de1.js"></script>
 
+  <script type="text/javascript"
+  src="http://code.jquery.com/jquery.min.js"></script>
+
   <!-- CSS -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="image/iconApp.png">
+
+  <script type="text/javascript">
+      $(document).ready(function(){<!--   w  w w. j a v a 2s . c o  m-->
+    // Activate carousel
+    $("#carouselShowCase").carousel();
+
+    // Enable carousel indicators
+    $(".slide-zero").click(function(){
+      $("#carouselShowCase").carousel(0);
+      console.log("Click sero!");
+    });
+    $(".slide-one").click(function(){
+      $("#carouselShowCase").carousel(1);
+    });
+    $(".slide-two").click(function(){
+      $("#carouselShowCase").carousel(2);
+    });
+    $(".slide-three").click(function(){
+      $("#carouselShowCase").carousel(3);
+    });
+});
+</script>
 
   <title>Cryptocurrencies</title>
 </head>
@@ -54,7 +79,31 @@
             <a class="btn btn-dark btn-lg" href=""><i class="devicon-apple-original"></i> Download</a>
           </div>
           <div class="col-md-6">
-            <img class="iphone" src="image/demo.gif" alt="">
+
+            <div id="carouselShowCase" class="carousel slide"  data-interval="3000" data-ride="carousel">
+
+              <ol class="carousel-indicators">
+                <li class="active  slide-zero"></li>
+                <li class="slide-one"></li>
+                <li class="slide-two"></li>
+                <li class="slide-three"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="iphone" src="image/graph.png" alt="Graph">
+                </div>
+                <div class="carousel-item">
+                  <img class="iphone" src="image/list.png" alt="List of cryptocurrencies">
+                </div>
+                <div class="carousel-item">
+                  <img class="iphone" src="image/favorites.png" alt="Favorites cryptocurrencies">
+                </div>
+                <div class="carousel-item">
+                  <img class="iphone" src="image/news.png" alt="News about cryptocurrencies">
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
@@ -72,7 +121,32 @@
       <h1 class="title">Features</h1>
       <div class="row">
         <div class="col-md-6">
-          <img class="iphone" src="image/demo.gif" alt="">
+          <div id="carouselShowCase2" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="iphone" src="image/graph.png" alt="Graph">
+              </div>
+              <div class="carousel-item">
+                <img class="iphone" src="image/list.png" alt="List of cryptocurrencies">
+              </div>
+              <div class="carousel-item">
+                <img class="iphone" src="image/favorites.png" alt="Favorites cryptocurrencies">
+              </div>
+              <div class="carousel-item">
+                <img class="iphone" src="image/news.png" alt="News about cryptocurrencies">
+              </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselShowCase2" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselShowCase2" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+
+          </div>
         </div>
         <div class="col-md-6">
           <div class="row">
@@ -93,7 +167,7 @@
             </div>
             <div class="col-md-6 feature-col">
               <i class="fas fa-gift icon"></i>
-                <h3 class="feature-title">Free</h3>
+              <h3 class="feature-title">Free</h3>
               <p class="feature-text">This app is free to download from the Apple's app store!</p>
             </div>
           </div>
@@ -116,7 +190,7 @@
         <a class="footer-link" href="PrivacyPolicy.html">Privacy</a>
       </li>
       <li class="list-inline-item">
-        <a  class="footer-link" href="TermsAndConditions.html">Terms and Conditions</a>
+        <a class="footer-link" href="TermsAndConditions.html">Terms and Conditions</a>
       </li>
     </ul>
   </section>
